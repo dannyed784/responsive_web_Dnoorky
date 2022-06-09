@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400&family=Noto+Sans:wght@100;200;300;400&family=PT+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;400&family=Noto+Sans:wght@100;200;300;400&family=PT+Sans:wght@400;700&display=swap');
 
 :root {
   --primary-color: #047aed;
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -101,8 +101,8 @@ img {
   margin: 30px 0;
 }
 
-.showcase-form input[type="text"],
-.showcase-form input[type="email"] {
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -112,6 +112,21 @@ img {
 
 .showcase-form input:focus {
   outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
 }
 
 /*Utilities*/
